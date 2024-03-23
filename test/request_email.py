@@ -20,7 +20,7 @@ def request_email():
                     break
                 except ValueError:
                     print("Please enter one of the valid options.")
-            break
+            return False
 
 def main():
     print(request_email())
