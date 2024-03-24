@@ -7,18 +7,18 @@ def request_search(database):
         if search_options == 1:
             name = input("Enter the name to be searched: ")
             result = search_data(database, name)
-            if result == None:
+            if result == []:
                 print(f"No information with data {name} has been found.")
             else:
-                return result
+                print(result)
             
         elif search_options == 2:
             surname = input("Enter the surname to be searched: ")
             result = search_data(database, surname, True)
-            if result == None:
+            if result == []:
                 print(f"No information with data {surname} has been found.")
             else:
-                return result
+                print(result)
         else:
             print("The selected option is not valid.")
         

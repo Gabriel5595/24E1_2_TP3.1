@@ -14,7 +14,6 @@ def register_user(database):
         print("Not possible to finalize user registration since no valid email has been entered.")
     else:
         name_and_surname.append(email)
-        print(name_and_surname)
         database.append(name_and_surname)
         return database
 
